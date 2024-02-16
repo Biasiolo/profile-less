@@ -10,7 +10,7 @@
 }
 body {
   background-color: #ffd32a;
-  color: #1e272e;
+  color: #485460;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -51,7 +51,6 @@ header .profile-avatar {
 }
 .profile-bio-text {
   font-size: 1.2rem;
-  opacity: 0.8;
 }
 .social-links {
   display: flex;
