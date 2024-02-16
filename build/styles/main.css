@@ -87,7 +87,7 @@ header .profile-avatar {
   margin-bottom: 1rem;
   text-align: center;
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #1e272e;
   border: 2px solid #575fcf;
   transform: perspective(1200px) translateZ(100px) rotateY(45deg);
@@ -108,7 +108,7 @@ header .profile-avatar {
   margin-bottom: 1rem;
   text-align: center;
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #1e272e;
   border: 2px solid #ff5e57;
   transform: perspective(1200px) translateZ(100px) rotateY(-45deg);
@@ -127,7 +127,7 @@ header .profile-avatar {
   margin-bottom: 1rem;
   text-align: center;
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #1e272e;
   border: 2px solid #05c46b;
   transform: perspective(1200px) translateZ(100px) rotateY(45deg);
@@ -146,7 +146,7 @@ header .profile-avatar {
   margin-bottom: 1rem;
   text-align: center;
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #1e272e;
   border: 2px solid #ffdd59;
   transform: perspective(1200px) translateZ(100px) rotateY(-45deg);
@@ -156,4 +156,9 @@ header .profile-avatar {
   background-color: transparent;
   color: #d2dae2;
   transform: scale(1.05);
+}
+.sectiontwo {
+  margin-top: 40px;
+  padding: 80px;
+  background-color: azure;
 }
