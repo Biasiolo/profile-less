@@ -112,18 +112,23 @@ header {
             display: block;
             padding: 0.7rem 1.2rem;
             margin-bottom: 1rem;
-            border-radius: 2rem;
+
             text-align: center;
             font-weight: 700;
             font-size: 1.1rem;
             color: #colors[textColor];
-            transition: background ease .4s;
+
             border: 2px solid #colors[buttonColor];
+            transform: perspective(1300px) translateZ(100px) rotateY(45deg);
+            transition: transform 0.3s ease;
+            /* Adiciona uma transição suave */
 
             &:hover {
                 background-color: transparent;
                 color: #575fcf;
-                transform: scale(1.02);
+
+                transform: scale(1.05);
+                /* Adicione o efeito de rotação no eixo Y */
             }
         }
     }
@@ -135,18 +140,20 @@ header {
             display: block;
             padding: 0.7rem 1.2rem;
             margin-bottom: 1rem;
-            border-radius: 2rem;
+
             text-align: center;
             font-weight: 700;
             font-size: 1.1rem;
             color: #colors[textColor];
-            transition: background ease .4s;
+
             border: 2px solid #colors[buttonColort];
+            transform: perspective(1300px) translateZ(100px) rotateY(-45deg);
+            transition: transform 0.3s ease;
 
             &:hover {
                 background-color: transparent;
                 color: #575fcf;
-                transform: scale(1.02);
+                transform: scale(1.05);
             }
         }
     }
@@ -158,18 +165,20 @@ header {
             display: block;
             padding: 0.7rem 1.2rem;
             margin-bottom: 1rem;
-            border-radius: 2rem;
+
             text-align: center;
             font-weight: 700;
             font-size: 1.1rem;
             color: #colors[textColor];
-            transition: background ease .4s;
+
             border: 2px solid #colors[buttonColorg];
+            transform: perspective(1300px) translateZ(100px) rotateY(45deg);
+            transition: transform 0.3s ease;
 
             &:hover {
                 background-color: transparent;
                 color: #575fcf;
-                transform: scale(1.02);
+                transform: scale(1.05);
             }
         }
     }
