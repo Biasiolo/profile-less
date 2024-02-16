@@ -116,7 +116,7 @@ header {
             text-align: center;
             font-weight: 700;
             font-size: 1.1rem;
-            color: #colors[textColor];
+            color: #colors[textColor2];
 
             border: 2px solid #colors[buttonColor];
             transform: perspective(1200px) translateZ(100px) rotateY(45deg);
@@ -125,7 +125,7 @@ header {
 
             &:hover {
                 background-color: transparent;
-                color: #575fcf;
+                color: #colors[textColor];
 
                 transform: scale(1.05);
                 /* Adicione o efeito de rotação no eixo Y */
@@ -144,7 +144,7 @@ header {
             text-align: center;
             font-weight: 700;
             font-size: 1.1rem;
-            color: #colors[textColor];
+            color: #colors[textColor2];
 
             border: 2px solid #colors[buttonColort];
             transform: perspective(1200px) translateZ(100px) rotateY(-45deg);
@@ -152,7 +152,7 @@ header {
 
             &:hover {
                 background-color: transparent;
-                color: #575fcf;
+                color: #colors[textColor];
                 transform: scale(1.05);
             }
         }
@@ -169,7 +169,7 @@ header {
             text-align: center;
             font-weight: 700;
             font-size: 1.1rem;
-            color: #colors[textColor];
+            color: #colors[textColor2];
 
             border: 2px solid #colors[buttonColorg];
             transform: perspective(1200px) translateZ(100px) rotateY(45deg);
@@ -177,7 +177,31 @@ header {
 
             &:hover {
                 background-color: transparent;
-                color: #575fcf;
+                color: #colors[textColor];
+                transform: scale(1.05);
+            }
+        }
+    }
+    &-item4 {
+        a {
+            text-decoration: none;
+            background-color: #colors[buttonColory];
+            display: block;
+            padding: 0.7rem 1.2rem;
+            margin-bottom: 1rem;
+
+            text-align: center;
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #colors[textColor2];
+
+            border: 2px solid #colors[buttonColory];
+            transform: perspective(1200px) translateZ(100px) rotateY(-45deg);
+            transition: transform 0.3s ease;
+
+            &:hover {
+                background-color: transparent;
+                color: #colors[textColor];
                 transform: scale(1.05);
             }
         }

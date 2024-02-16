@@ -88,7 +88,7 @@ header .profile-avatar {
   text-align: center;
   font-weight: 700;
   font-size: 1.1rem;
-  color: #d2dae2;
+  color: #1e272e;
   border: 2px solid #575fcf;
   transform: perspective(1200px) translateZ(100px) rotateY(45deg);
   transition: transform 0.3s ease;
@@ -96,7 +96,7 @@ header .profile-avatar {
 }
 .projects-list-item a:hover {
   background-color: transparent;
-  color: #575fcf;
+  color: #d2dae2;
   transform: scale(1.05);
   /* Adicione o efeito de rotação no eixo Y */
 }
@@ -109,14 +109,14 @@ header .profile-avatar {
   text-align: center;
   font-weight: 700;
   font-size: 1.1rem;
-  color: #d2dae2;
+  color: #1e272e;
   border: 2px solid #ff5e57;
   transform: perspective(1200px) translateZ(100px) rotateY(-45deg);
   transition: transform 0.3s ease;
 }
 .projects-list-item2 a:hover {
   background-color: transparent;
-  color: #575fcf;
+  color: #d2dae2;
   transform: scale(1.05);
 }
 .projects-list-item3 a {
@@ -128,13 +128,32 @@ header .profile-avatar {
   text-align: center;
   font-weight: 700;
   font-size: 1.1rem;
-  color: #d2dae2;
+  color: #1e272e;
   border: 2px solid #05c46b;
   transform: perspective(1200px) translateZ(100px) rotateY(45deg);
   transition: transform 0.3s ease;
 }
 .projects-list-item3 a:hover {
   background-color: transparent;
-  color: #575fcf;
+  color: #d2dae2;
+  transform: scale(1.05);
+}
+.projects-list-item4 a {
+  text-decoration: none;
+  background-color: #ffdd59;
+  display: block;
+  padding: 0.7rem 1.2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #1e272e;
+  border: 2px solid #ffdd59;
+  transform: perspective(1200px) translateZ(100px) rotateY(-45deg);
+  transition: transform 0.3s ease;
+}
+.projects-list-item4 a:hover {
+  background-color: transparent;
+  color: #d2dae2;
   transform: scale(1.05);
 }
