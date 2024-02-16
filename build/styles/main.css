@@ -90,7 +90,7 @@ header .profile-avatar {
   font-size: 1.1rem;
   color: #d2dae2;
   border: 2px solid #575fcf;
-  transform: perspective(1300px) translateZ(100px) rotateY(45deg);
+  transform: perspective(1200px) translateZ(100px) rotateY(45deg);
   transition: transform 0.3s ease;
   /* Adiciona uma transição suave */
 }
@@ -111,7 +111,7 @@ header .profile-avatar {
   font-size: 1.1rem;
   color: #d2dae2;
   border: 2px solid #ff5e57;
-  transform: perspective(1300px) translateZ(100px) rotateY(-45deg);
+  transform: perspective(1200px) translateZ(100px) rotateY(-45deg);
   transition: transform 0.3s ease;
 }
 .projects-list-item2 a:hover {
@@ -130,7 +130,7 @@ header .profile-avatar {
   font-size: 1.1rem;
   color: #d2dae2;
   border: 2px solid #05c46b;
-  transform: perspective(1300px) translateZ(100px) rotateY(45deg);
+  transform: perspective(1200px) translateZ(100px) rotateY(45deg);
   transition: transform 0.3s ease;
 }
 .projects-list-item3 a:hover {
