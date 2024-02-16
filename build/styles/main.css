@@ -5,12 +5,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Fira Sans", sans-serif;
   list-style: none;
 }
 body {
-  background-color: #FFC312;
-  color: #1B1464;
+  background-color: #ffd32a;
+  color: #1e272e;
 }
 .container {
   max-width: 960px;
@@ -37,7 +37,7 @@ header {
 header .profile-avatar {
   display: block;
   margin: 0 auto 24px;
-  border-radius: 40%;
+  border-radius: 50%;
   max-width: 150px;
   max-height: 150px;
 }
@@ -45,17 +45,17 @@ header .profile-avatar {
   text-align: center;
 }
 .profile-bio-name {
-  font-size: 20px;
+  font-size: 24px;
   margin-bottom: 8px;
   font-weight: 700;
 }
 .profile-bio-subtitle {
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 8px;
 }
 .profile-bio-text {
-  font-size: 14px;
-  opacity: 0.7;
+  font-size: 18px;
+  opacity: 0.8;
 }
 .social-links {
   display: flex;
@@ -70,12 +70,17 @@ header .profile-avatar {
 .social-links li img:hover {
   transform: scale(1.4);
 }
+.section-title {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 12px;
+}
 .projects-list {
   margin-top: 32px;
 }
 .projects-list-item a {
   text-decoration: none;
-  background-color: #F79F1F;
+  background-color: #575fcf;
   display: block;
   padding: 16px 20px;
   margin-bottom: 16px;
@@ -83,10 +88,11 @@ header .profile-avatar {
   text-align: center;
   font-weight: 700;
   font-size: 18px;
-  color: #1B1464;
+  color: #ffd32a;
   transition: background ease 0.4s;
-  border: 2px solid #F79F1F;
+  border: 2px solid #575fcf;
 }
 .projects-list-item a:hover {
   background-color: transparent;
+  color: #575fcf;
 }
