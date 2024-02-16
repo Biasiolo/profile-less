@@ -22,15 +22,18 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 1rem; /* Adiciona espaçamento interno ao body */
+    padding: 1rem;
+    /* Adiciona espaçamento interno ao body */
 }
 
 .container {
-    max-width: 100%; /* Ajusta o valor para torná-lo totalmente responsivo */
+    max-width: 100%;
+    /* Ajusta o valor para torná-lo totalmente responsivo */
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    flex-shrink: 0; /* Impede que a .container encolha mais do que necessário */
+    flex-shrink: 0;
+    /* Impede que a .container encolha mais do que necessário */
 }
 
 header {
@@ -40,7 +43,8 @@ header {
         display: block;
         margin: 0 auto 1.8rem;
         border-radius: 50%;
-        max-width: 100%; /* Ajusta o valor para ser responsivo */
+        max-width: 100%;
+        /* Ajusta o valor para ser responsivo */
         max-height: 150px;
     }
 }
@@ -52,11 +56,15 @@ header {
         font-size: 1.8rem;
         .marginBottom8();
         font-weight: 700;
+        color: #ffdd59;
+
     }
 
     &-subtitle {
         font-size: 1.5rem;
         .marginBottom8();
+        color: #ffdd59;
+
     }
 
     &-text {
@@ -70,12 +78,13 @@ header {
     justify-content: space-around;
     max-width: 250px;
     width: 100%;
-    margin: 0 auto;
+    margin: 20px auto;
 
 
     li {
         img {
             transition: all ease .3s;
+            width: 35px;
 
             &:hover {
                 transform: scale(1.4);
@@ -86,8 +95,11 @@ header {
 
 .section-title {
     text-align: center;
-    margin-top: 0.8rem; /* Ajusta a margem superior */
+    margin-top: 0.8rem;
+    /* Ajusta a margem superior */
     padding-top: 1rem;
+    color: #ffdd59;
+    font-size: 1.5rem;
 }
 
 .projects-list {
@@ -111,6 +123,53 @@ header {
             &:hover {
                 background-color: transparent;
                 color: #575fcf;
+                transform: scale(1.02);
+            }
+        }
+    }
+
+    &-item2 {
+        a {
+            text-decoration: none;
+            background-color: #colors[buttonColort];
+            display: block;
+            padding: 0.7rem 1.2rem;
+            margin-bottom: 1rem;
+            border-radius: 2rem;
+            text-align: center;
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #colors[textColor];
+            transition: background ease .4s;
+            border: 2px solid #colors[buttonColort];
+
+            &:hover {
+                background-color: transparent;
+                color: #575fcf;
+                transform: scale(1.02);
+            }
+        }
+    }
+
+    &-item3 {
+        a {
+            text-decoration: none;
+            background-color: #colors[buttonColorg];
+            display: block;
+            padding: 0.7rem 1.2rem;
+            margin-bottom: 1rem;
+            border-radius: 2rem;
+            text-align: center;
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #colors[textColor];
+            transition: background ease .4s;
+            border: 2px solid #colors[buttonColorg];
+
+            &:hover {
+                background-color: transparent;
+                color: #575fcf;
+                transform: scale(1.02);
             }
         }
     }

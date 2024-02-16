@@ -9,8 +9,8 @@
   list-style: none;
 }
 body {
-  background-color: #ffd32a;
-  color: #485460;
+  background-color: #1e272e;
+  color: #d2dae2;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -44,10 +44,12 @@ header .profile-avatar {
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
   font-weight: 700;
+  color: #ffdd59;
 }
 .profile-bio-subtitle {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
+  color: #ffdd59;
 }
 .profile-bio-text {
   font-size: 1.2rem;
@@ -57,10 +59,11 @@ header .profile-avatar {
   justify-content: space-around;
   max-width: 250px;
   width: 100%;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 .social-links li img {
   transition: all ease 0.3s;
+  width: 35px;
 }
 .social-links li img:hover {
   transform: scale(1.4);
@@ -70,6 +73,8 @@ header .profile-avatar {
   margin-top: 0.8rem;
   /* Ajusta a margem superior */
   padding-top: 1rem;
+  color: #ffdd59;
+  font-size: 1.5rem;
 }
 .projects-list {
   margin-top: 2rem;
@@ -84,11 +89,50 @@ header .profile-avatar {
   text-align: center;
   font-weight: 700;
   font-size: 1.1rem;
-  color: #ffd32a;
+  color: #d2dae2;
   transition: background ease 0.4s;
   border: 2px solid #575fcf;
 }
 .projects-list-item a:hover {
   background-color: transparent;
   color: #575fcf;
+  transform: scale(1.02);
+}
+.projects-list-item2 a {
+  text-decoration: none;
+  background-color: #ff5e57;
+  display: block;
+  padding: 0.7rem 1.2rem;
+  margin-bottom: 1rem;
+  border-radius: 2rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #d2dae2;
+  transition: background ease 0.4s;
+  border: 2px solid #ff5e57;
+}
+.projects-list-item2 a:hover {
+  background-color: transparent;
+  color: #575fcf;
+  transform: scale(1.02);
+}
+.projects-list-item3 a {
+  text-decoration: none;
+  background-color: #05c46b;
+  display: block;
+  padding: 0.7rem 1.2rem;
+  margin-bottom: 1rem;
+  border-radius: 2rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #d2dae2;
+  transition: background ease 0.4s;
+  border: 2px solid #05c46b;
+}
+.projects-list-item3 a:hover {
+  background-color: transparent;
+  color: #575fcf;
+  transform: scale(1.02);
 }
