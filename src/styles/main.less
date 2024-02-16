@@ -1,15 +1,12 @@
-
 @import "variaveis.less";
 @import "mapas.less";
 
-
 @breakpointMobile: ~"(max-width: 767px)";
-@breakpointTablet: ~"(min-width: 768px) and (max-width: 960px)";
+@breakpointTablet: ~"(min-width: 768px) and (max-width: 1023px)";
 
 .marginBottom8 {
     margin-bottom: 0.5rem;
 }
-
 
 * {
     margin: 0;
@@ -18,27 +15,22 @@
     font-family: @fontFamily;
     list-style: none;
 }
+
 body {
     background-color: #colors[backgroundColor];
     color: @corTexto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem; /* Adiciona espaçamento interno ao body */
 }
 
 .container {
-    max-width: 100vw;
-    width: 50vw;
+    max-width: 100%; /* Ajusta o valor para torná-lo totalmente responsivo */
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-
-
-    @media @breakpointTablet {
-        max-width: 80%;
-    }
-
-    @media @breakpointMobile {
-        max-width: 70%;
-    }
-
+    flex-shrink: 0; /* Impede que a .container encolha mais do que necessário */
 }
 
 header {
@@ -48,13 +40,14 @@ header {
         display: block;
         margin: 0 auto 1.8rem;
         border-radius: 50%;
-        max-width: 150px;
+        max-width: 100%; /* Ajusta o valor para ser responsivo */
         max-height: 150px;
     }
 }
 
 .profile-bio {
     text-align: center;
+
     &-name {
         font-size: 1.8rem;
         .marginBottom8();
@@ -82,18 +75,17 @@ header {
     li {
         img {
             transition: all ease .3s;
+
             &:hover {
                 transform: scale(1.4);
             }
         }
     }
-
 }
 
 .section-title {
-
     text-align: center;
-    margin-top: 1.3rem;
+    margin-top: 0.8rem; /* Ajusta a margem superior */
     padding-top: 1rem;
 }
 
