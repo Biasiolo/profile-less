@@ -1,13 +1,35 @@
+// Importa variáveis e mapas
 @import "variaveis.less";
 @import "mapas.less";
 
+// Define breakpoints responsivos
 @breakpointMobile: ~"(max-width: 767px)";
 @breakpointTablet: ~"(min-width: 768px) and (max-width: 1023px)";
 
+// Mixin para adicionar margem inferior de 8px
 .marginBottom8 {
     margin-bottom: 0.5rem;
 }
 
+// Mixin para estilos comuns de link
+.commonLinkStyles() {
+    text-decoration: none;
+    display: block;
+    padding: 0.7rem 1.2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #colors[textColor2];
+    transition: transform 0.4s ease;
+}
+.hoverStyle {
+    background-color: transparent;
+    color: #colors[textColor];
+    transform: scale(1.05);
+}
+
+// Reset de estilos para o body e outros elementos
 * {
     margin: 0;
     padding: 0;
@@ -16,6 +38,7 @@
     list-style: none;
 }
 
+// Estilos do corpo do documento
 body {
     background-color: #colors[backgroundColor];
     color: @corTexto;
@@ -23,63 +46,60 @@ body {
     flex-direction: column;
     justify-content: space-between;
     padding: 1rem;
-    /* Adiciona espaçamento interno ao body */
+    font-weight: @fontWeight;
 }
 
+// Container principal
 .container {
     max-width: 100%;
-    /* Ajusta o valor para torná-lo totalmente responsivo */
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
-    /* Impede que a .container encolha mais do que necessário */
 }
 
+// Estilos de cabeçalho
 header {
     padding: 2rem;
 
     .profile-avatar {
         display: block;
         margin: 0 auto 1.8rem;
-        border-radius: 75px;
+        border-radius: 65px;
         max-width: 100%;
-        /* Ajusta o valor para ser responsivo */
         max-height: 150px;
     }
 }
 
+// Biografia do perfil
 .profile-bio {
     text-align: center;
 
     &-name {
-        font-size: 1.8rem;
+        font-size: 2.2rem;
         .marginBottom8();
-        font-weight: 700;
+        font-weight: 900;
         color: #ffdd59;
-
     }
 
     &-subtitle {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         .marginBottom8();
         color: #ffdd59;
-
     }
 
     &-text {
         font-size: 1.2rem;
-
     }
 }
 
+// Links sociais
 .social-links {
     display: flex;
     justify-content: space-around;
     max-width: 250px;
     width: 100%;
-    margin: 20px auto;
-
+    margin: 12px auto;
 
     li {
         img {
@@ -93,121 +113,63 @@ header {
     }
 }
 
+// Título de seção
 .section-title {
     text-align: center;
     margin-top: 0.8rem;
-    /* Ajusta a margem superior */
     padding-top: 1rem;
     color: #ffdd59;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
+// Lista de projetos
 .projects-list {
     margin-top: 2rem;
 
-    &-item {
+    &-item, &-item2, &-item3, &-item4 {
         a {
-            text-decoration: none;
-            background-color: #colors[buttonColor];
-            display: block;
-            padding: 0.7rem 1.2rem;
-            margin-bottom: 1rem;
-
-            text-align: center;
-            font-weight: 700;
-            font-size: 1.2rem;
-            color: #colors[textColor2];
-
-            border: 2px solid #colors[buttonColor];
-            transform: perspective(1200px) translateZ(100px) rotateY(45deg);
-            transition: transform 0.3s ease;
-            /* Adiciona uma transição suave */
+            .commonLinkStyles();
 
             &:hover {
-                background-color: transparent;
-                color: #colors[textColor];
-
-                transform: scale(1.05);
-                /* Adicione o efeito de rotação no eixo Y */
+                .hoverStyle();
             }
+        }
+    }
+
+    &-item {
+        a {
+            background-color: #colors[buttonColor];
+            border: 2px solid #colors[buttonColor];
+            transform: perspective(1200px) translateZ(100px) rotateY(45deg);
         }
     }
 
     &-item2 {
         a {
-            text-decoration: none;
             background-color: #colors[buttonColort];
-            display: block;
-            padding: 0.7rem 1.2rem;
-            margin-bottom: 1rem;
-
-            text-align: center;
-            font-weight: 700;
-            font-size: 1.2rem;
-            color: #colors[textColor2];
-
             border: 2px solid #colors[buttonColort];
             transform: perspective(1200px) translateZ(100px) rotateY(-45deg);
-            transition: transform 0.3s ease;
-
-            &:hover {
-                background-color: transparent;
-                color: #colors[textColor];
-                transform: scale(1.05);
-            }
         }
     }
 
     &-item3 {
         a {
-            text-decoration: none;
             background-color: #colors[buttonColorg];
-            display: block;
-            padding: 0.7rem 1.2rem;
-            margin-bottom: 1rem;
-
-            text-align: center;
-            font-weight: 700;
-            font-size: 1.2rem;
-            color: #colors[textColor2];
-
             border: 2px solid #colors[buttonColorg];
             transform: perspective(1200px) translateZ(100px) rotateY(45deg);
-            transition: transform 0.3s ease;
-
-            &:hover {
-                background-color: transparent;
-                color: #colors[textColor];
-                transform: scale(1.05);
-            }
         }
     }
+
     &-item4 {
         a {
-            text-decoration: none;
             background-color: #colors[buttonColory];
-            display: block;
-            padding: 0.7rem 1.2rem;
-            margin-bottom: 1rem;
-
-            text-align: center;
-            font-weight: 700;
-            font-size: 1.2rem;
-            color: #colors[textColor2];
-
             border: 2px solid #colors[buttonColory];
             transform: perspective(1200px) translateZ(100px) rotateY(-45deg);
-            transition: transform 0.3s ease;
-
-            &:hover {
-                background-color: transparent;
-                color: #colors[textColor];
-                transform: scale(1.05);
-            }
         }
     }
 }
 
+// Segunda seção
 .sectiontwo {
     margin-top: 40px;
     padding: 80px;

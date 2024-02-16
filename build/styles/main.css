@@ -1,11 +1,16 @@
 .marginBottom8 {
   margin-bottom: 0.5rem;
 }
+.hoverStyle {
+  background-color: transparent;
+  color: #d2dae2;
+  transform: scale(1.05);
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   list-style: none;
 }
 body {
@@ -15,16 +20,14 @@ body {
   flex-direction: column;
   justify-content: space-between;
   padding: 1rem;
-  /* Adiciona espaçamento interno ao body */
+  font-weight: 600;
 }
 .container {
   max-width: 100%;
-  /* Ajusta o valor para torná-lo totalmente responsivo */
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
-  /* Impede que a .container encolha mais do que necessário */
 }
 header {
   padding: 2rem;
@@ -32,22 +35,21 @@ header {
 header .profile-avatar {
   display: block;
   margin: 0 auto 1.8rem;
-  border-radius: 75px;
+  border-radius: 65px;
   max-width: 100%;
-  /* Ajusta o valor para ser responsivo */
   max-height: 150px;
 }
 .profile-bio {
   text-align: center;
 }
 .profile-bio-name {
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   margin-bottom: 0.5rem;
-  font-weight: 700;
+  font-weight: 900;
   color: #ffdd59;
 }
 .profile-bio-subtitle {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin-bottom: 0.5rem;
   color: #ffdd59;
 }
@@ -59,7 +61,7 @@ header .profile-avatar {
   justify-content: space-around;
   max-width: 250px;
   width: 100%;
-  margin: 20px auto;
+  margin: 12px auto;
 }
 .social-links li img {
   transition: all ease 0.3s;
@@ -71,76 +73,18 @@ header .profile-avatar {
 .section-title {
   text-align: center;
   margin-top: 0.8rem;
-  /* Ajusta a margem superior */
   padding-top: 1rem;
   color: #ffdd59;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 .projects-list {
   margin-top: 2rem;
 }
-.projects-list-item a {
-  text-decoration: none;
-  background-color: #575fcf;
-  display: block;
-  padding: 0.7rem 1.2rem;
-  margin-bottom: 1rem;
-  text-align: center;
-  font-weight: 700;
-  font-size: 1.2rem;
-  color: #1e272e;
-  border: 2px solid #575fcf;
-  transform: perspective(1200px) translateZ(100px) rotateY(45deg);
-  transition: transform 0.3s ease;
-  /* Adiciona uma transição suave */
-}
-.projects-list-item a:hover {
-  background-color: transparent;
-  color: #d2dae2;
-  transform: scale(1.05);
-  /* Adicione o efeito de rotação no eixo Y */
-}
-.projects-list-item2 a {
-  text-decoration: none;
-  background-color: #ff5e57;
-  display: block;
-  padding: 0.7rem 1.2rem;
-  margin-bottom: 1rem;
-  text-align: center;
-  font-weight: 700;
-  font-size: 1.2rem;
-  color: #1e272e;
-  border: 2px solid #ff5e57;
-  transform: perspective(1200px) translateZ(100px) rotateY(-45deg);
-  transition: transform 0.3s ease;
-}
-.projects-list-item2 a:hover {
-  background-color: transparent;
-  color: #d2dae2;
-  transform: scale(1.05);
-}
-.projects-list-item3 a {
-  text-decoration: none;
-  background-color: #05c46b;
-  display: block;
-  padding: 0.7rem 1.2rem;
-  margin-bottom: 1rem;
-  text-align: center;
-  font-weight: 700;
-  font-size: 1.2rem;
-  color: #1e272e;
-  border: 2px solid #05c46b;
-  transform: perspective(1200px) translateZ(100px) rotateY(45deg);
-  transition: transform 0.3s ease;
-}
-.projects-list-item3 a:hover {
-  background-color: transparent;
-  color: #d2dae2;
-  transform: scale(1.05);
-}
+.projects-list-item a,
+.projects-list-item2 a,
+.projects-list-item3 a,
 .projects-list-item4 a {
   text-decoration: none;
-  background-color: #ffdd59;
   display: block;
   padding: 0.7rem 1.2rem;
   margin-bottom: 1rem;
@@ -148,14 +92,35 @@ header .profile-avatar {
   font-weight: 700;
   font-size: 1.2rem;
   color: #1e272e;
-  border: 2px solid #ffdd59;
-  transform: perspective(1200px) translateZ(100px) rotateY(-45deg);
-  transition: transform 0.3s ease;
+  transition: transform 0.4s ease;
 }
+.projects-list-item a:hover,
+.projects-list-item2 a:hover,
+.projects-list-item3 a:hover,
 .projects-list-item4 a:hover {
   background-color: transparent;
   color: #d2dae2;
   transform: scale(1.05);
+}
+.projects-list-item a {
+  background-color: #575fcf;
+  border: 2px solid #575fcf;
+  transform: perspective(1200px) translateZ(100px) rotateY(45deg);
+}
+.projects-list-item2 a {
+  background-color: #ff5e57;
+  border: 2px solid #ff5e57;
+  transform: perspective(1200px) translateZ(100px) rotateY(-45deg);
+}
+.projects-list-item3 a {
+  background-color: #05c46b;
+  border: 2px solid #05c46b;
+  transform: perspective(1200px) translateZ(100px) rotateY(45deg);
+}
+.projects-list-item4 a {
+  background-color: #ffdd59;
+  border: 2px solid #ffdd59;
+  transform: perspective(1200px) translateZ(100px) rotateY(-45deg);
 }
 .sectiontwo {
   margin-top: 40px;
