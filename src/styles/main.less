@@ -68,9 +68,16 @@ header {
     .profile-avatar {
         display: block;
         margin: 0 auto 1.8rem;
-        border-radius: 65px;
+        background-color: #ff5e57;
         max-width: 100%;
         max-height: 150px;
+        cursor: crosshair;
+
+
+        &:hover {
+            transform: scale(1.2);
+        }
+
     }
 }
 
@@ -204,6 +211,8 @@ header {
     display: inline-block; /* Alterado para inline-block para permitir a aplicação de margens */
     margin-bottom: 1rem; /* Adiciona uma margem inferior entre os ícones */
     padding: 0.5rem;
+    cursor:grab;
+    cursor:crosshair;
 }
 
 /* Media query para ajustar a exibição em dispositivos móveis */
@@ -283,10 +292,11 @@ header {
   .close {
     position: absolute;
     top: 2vh;
-    right: 50%;
+    right: 35vw;
     cursor: pointer;
     color: red;
     font-size: 3rem;
+    
   }
 
   .barra {
