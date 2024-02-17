@@ -58,6 +58,10 @@ header .profile-avatar {
 .profile-bio-text {
   font-size: 1.2rem;
 }
+.profile-bio img {
+  margin-left: 0;
+  text-align: center;
+}
 .social-links {
   display: flex;
   justify-content: space-around;
@@ -134,10 +138,30 @@ header .profile-avatar {
   padding: 2.5rem;
   align-items: center;
   text-align: center;
+  max-width: 100%;
+}
+.badget {
+  display: flex;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  /* Permite que os ícones quebrem para a próxima linha em dispositivos móveis */
 }
 .icon-container {
   position: relative;
   display: inline-block;
+  /* Alterado para inline-block para permitir a aplicação de margens */
+  margin-bottom: 1rem;
+  /* Adiciona uma margem inferior entre os ícones */
+  padding: 0.5rem;
+}
+/* Media query para ajustar a exibição em dispositivos móveis */
+@media screen and (max-width: 767px) {
+  .icon-container {
+    width: calc(30% - 2rem);
+    /* Dois ícones por linha em dispositivos móveis */
+    margin-bottom: 2.2rem;
+    /* Adiciona uma margem inferior entre os ícones */
+  }
 }
 .language-icon {
   transition: transform 1s ease;
