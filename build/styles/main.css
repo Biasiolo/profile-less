@@ -222,7 +222,7 @@ footer {
 .close {
   position: absolute;
   top: 2vh;
-  right: 45%;
+  right: 50%;
   cursor: pointer;
   color: red;
   font-size: 3rem;
