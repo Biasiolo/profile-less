@@ -32,6 +32,8 @@ body {
 }
 header {
   padding: 2rem;
+  justify-content: center;
+  text-align: center;
 }
 header .profile-avatar {
   display: block;
@@ -139,6 +141,7 @@ header .profile-avatar {
   align-items: center;
   text-align: center;
   max-width: 100%;
+  justify-content: center;
 }
 .badget {
   display: flex;
@@ -161,6 +164,9 @@ header .profile-avatar {
     /* Dois ícones por linha em dispositivos móveis */
     margin-bottom: 2.2rem;
     /* Adiciona uma margem inferior entre os ícones */
+  }
+  img {
+    max-width: 100%;
   }
 }
 .language-icon {
@@ -219,4 +225,25 @@ footer {
   right: 50%;
   cursor: pointer;
   font-size: 2rem;
+}
+.barra {
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 20px;
+  animation: animateBar 5s ease-in-out infinite;
+  animation-delay: 2s;
+  display: inline-block;
+  text-align: center;
+  font-size: 24px;
+}
+@keyframes animateBar {
+  0% {
+    transform: translateX(-10%);
+  }
+  50% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(-10%);
+  }
 }
