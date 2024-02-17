@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
 
 
     <link rel="stylesheet" href="build/styles/main.css">
@@ -21,7 +23,9 @@
             <img class="profile-avatar"
                 src="./src/images/WhatsApp_Image_2023-11-01_at_10.09.30-removebg-preview (1).png" alt="teste" />
             <div class="profile-bio">
-                <h1 class="profile-bio-name">Biasiolo</h1>
+                <img src="https://readme-typing-svg.herokuapp.com/?font=Arial&color=d2dae2&size=40&pause=8000&center=true&vCenter=true&lines=|||| ||| |||| ||| |||| ||| ||||"
+                    alt="" style="filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));">
+                <h1 class="profile-bio-name">Rafael Biasiolo</h1>
                 <h2 class="profile-bio-subtitle">Desenvolvedor Front-End</h2>
                 <p class="profile-bio-text">Transformo conceitos criativos em interfaces
                     elegantes, funcionais e intuitivas</p>
@@ -40,18 +44,21 @@
                 <li><a href="mailto:biasiolorafael@gmail.com">
                         <img src="./src/images/mail.svg" target="_blank" alt="logo mail">
                     </a></li>
+                <li><a href="https://wa.me/+5511985888874">
+                        <img src="./src/images/phone.svg" target="_blank" alt="logo mail">
+                    </a></li>
             </ul>
         </nav>
         <nav>
             <h3 class="section-title">Projetos</h3>
             <ul class="projects-list">
                 <li class="projects-list-item">
-                    <a href="https://pixellers-studio.vercel.app/" target="_blank">
+                    <a href="#" onclick="openModal('https://pixellers-studio.vercel.app/')">
                         Pixellers Studio
                     </a>
                 </li>
                 <li class="projects-list-item">
-                    <a href="https://jsl-bank.vercel.app/" target="_blank">
+                    <a href="#" onclick="openModal('https://jsl-bank.vercel.app/')">
                         JSL Bank
                     </a>
                 </li>
@@ -59,8 +66,8 @@
             </ul>
             <ul class="projects-list">
                 <li class="projects-list-item2">
-                    <a href="https://pixellers-studio.vercel.app/" target="_blank">
-                        Pixellers Studio
+                    <a href="https://best-karaoke.vercel.app/" target="_blank">
+                        Best Karaoke
                     </a>
                 </li>
 
@@ -74,36 +81,99 @@
             <ul class="projects-list">
 
                 <li class="projects-list-item3">
-                    <a href="https://jsl-bank.vercel.app/" target="_blank">
-                        JSL Bank
+                    <a href="https://station-sports.vercel.app/" target="_blank">
+                        Station Sports
                     </a>
                 </li>
                 <li class="projects-list-item3">
-                    <a href="https://site-restaurante-ten.vercel.app/" target="_blank">
-                        O Restaurante
+                    <a href="https://slide-menu-orcin.vercel.app/" target="_blank">
+                        Slide Menu
                     </a>
                 </li>
 
             </ul>
             <ul class="projects-list">
                 <li class="projects-list-item4">
-                    <a href="https://pixellers-studio.vercel.app/" target="_blank">
-                        Pixellers Studio
+                    <a href="https://flash-button.vercel.app/" target="_blank">
+                        Screenshot Button
                     </a>
                 </li>
                 <li class="projects-list-item4">
-                    <a href="https://jsl-bank.vercel.app/" target="_blank">
-                        JSL Bank
+                    <a href="https://to-do-gen.vercel.app/" target="_blank">
+                        To Do Gen
                     </a>
                 </li>
             </ul>
 
         </nav>
+
+
+    </div>
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <iframe id="modal-iframe" style="width: 100%; height: 80vh; border: none;"></iframe>
+        </div>
     </div>
     <div class="sectiontwo">
-
+        <img src="https://readme-typing-svg.herokuapp.com/?font=Arial&color=d2dae2&size=40&pause=8000&center=true&vCenter=true&lines=|||| ||| |||| ||| |||| ||| ||||"
+            alt="" style="filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));">
+        <h3 class="section-title">Skills</h3>
+        <div class="badgets" style="display: flex; gap: 1.5rem;">
+            <div class="icon-container">
+                <img src="https://skillicons.dev/icons?i=html" alt="HTML" class="language-icon">
+                <span class="language-name">HTML</span>
+            </div>
+            <div class="icon-container">
+                <img src="https://skillicons.dev/icons?i=css" alt="CSS" class="language-icon">
+                <span class="language-name">CSS</span>
+            </div>
+            <div class="icon-container">
+                <img src="https://skillicons.dev/icons?i=js" alt="Javascript" class="language-icon">
+                <span class="language-name">Javascript</span>
+            </div>
+            <div class="icon-container">
+                <img src="https://skillicons.dev/icons?i=bootstrap" alt="Bootstrap" class="language-icon">
+                <span class="language-name">Bootstrap</span>
+            </div>
+            <div class="icon-container">
+                <img src="https://skillicons.dev/icons?i=sass" alt="SASS" class="language-icon">
+                <span class="language-name">Sass</span>
+            </div>
+            <div class="icon-container">
+                <img src="https://skillicons.dev/icons?i=jquery" alt="JQuery" class="language-icon">
+                <span class="language-name">JQuery</span>
+            </div>
+            <div class="icon-container">
+                <img src="https://skillicons.dev/icons?i=gulp" alt="Gulp" class="language-icon">
+                <span class="language-name">Gulp</span>
+            </div>
+            <div class="icon-container">
+                <img src="https://skillicons.dev/icons?i=nodejs&theme=light" alt="NodeJS" class="language-icon">
+                <span class="language-name">NodeJS</span>
+            </div>
+            <div class="icon-container">
+                <img src="https://skillicons.dev/icons?i=git" alt="Git" class="language-icon">
+                <span class="language-name">Git</span>
+            </div>
+            <div class="icon-container">
+                <img src="https://skillicons.dev/icons?i=github&theme=light" alt="GitHub" class="language-icon">
+                <span class="language-name">GitHub</span>
+            </div>
+            <div class="icon-container">
+                <img src="https://skillicons.dev/icons?i=wordpress" alt="Wordpress" class="language-icon">
+                <span class="language-name">Wordpress</span>
+            </div>
+        </div>
     </div>
 
+
+    <footer>
+        &copy; 2024
+    </footer>
+
+
+    <script src="./src/script.js"></script>
 </body>
 
 </html>
