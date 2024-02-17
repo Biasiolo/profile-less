@@ -176,8 +176,8 @@ header .profile-avatar:hover {
   }
   .close {
     position: absolute;
-    top: 10%;
-    right: 10%;
+    top: 5vh;
+    right: 5vw;
   }
 }
 .language-icon {
@@ -257,5 +257,12 @@ footer {
   }
   100% {
     transform: translateX(-10%);
+  }
+}
+@media screen and (max-width: 767px) {
+  .close {
+    position: absolute;
+    top: 4vh;
+    right: 4vw;
   }
 }
