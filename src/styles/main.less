@@ -351,6 +351,7 @@ header {
     transform: perspective(1200px) translateZ(100px) rotateY(45deg); 
     text-align: left;
     transition: transform 0.3s ease, background-color 0.3s ease; 
+    cursor:w-resize;
     &:hover {
         transform: scale(1.05);
         text-align: center;
@@ -378,4 +379,14 @@ header {
     border: 2px solid #colors[buttonColory];
     transform: perspective(1200px) translateZ(100px) rotateY(-45deg); 
     text-align: right; 
+}
+
+.back-to-top {
+    text-decoration: none;
+    color:@corTexto;
+    margin-bottom: 2rem;
+    &:hover {
+        transform: scale(1.2);
+        color:#ffdd59;
+    }
 }

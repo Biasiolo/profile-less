@@ -279,6 +279,7 @@ footer {
   transform: perspective(1200px) translateZ(100px) rotateY(45deg);
   text-align: left;
   transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: w-resize;
 }
 .service-card1:hover,
 .service-card2:hover,
@@ -305,4 +306,13 @@ footer {
   border: 2px solid #ffdd59;
   transform: perspective(1200px) translateZ(100px) rotateY(-45deg);
   text-align: right;
+}
+.back-to-top {
+  text-decoration: none;
+  color: #d2dae2;
+  margin-bottom: 2rem;
+}
+.back-to-top:hover {
+  transform: scale(1.2);
+  color: #ffdd59;
 }
