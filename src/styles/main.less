@@ -263,10 +263,15 @@ header {
 
   footer {
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 20px;
     color:#ffdd59;
     text-align: center;
-    margin-top: 2rem;
+
+    max-width: 200px;
+    margin: 0 auto;
 
 
 
@@ -285,7 +290,7 @@ header {
     align-items: center;
     text-align: center;
     z-index: 555;
-    
+
   }
   
   .modal-content {
@@ -336,4 +341,58 @@ header {
         top: 2vh;
         right: 45%;
       }
+}
+
+.services-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.service-section-card {
+    display: flex;
+    margin: 0 auto;
+}
+
+.service-card1, .service-card2, .service-card3, .service-card4 {
+    width: 200px;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 1.3rem;
+    color: #colors[textColor2];
+    border: 2px solid #colors[buttonColor]; 
+    background-color: #colors[buttonColor]; 
+    transform: perspective(1200px) translateZ(100px) rotateY(45deg); 
+    text-align: left;
+    transition: transform 0.3s ease, background-color 0.3s ease; 
+    &:hover {
+        transform: scale(1.05);
+        text-align: center;
+        background-color: transparent;
+        color: #colors[textColor];
+    }
+}
+
+.service-card2 {
+    background-color: #colors[buttonColort]; 
+    border: 2px solid #colors[buttonColort];
+    transform: perspective(1200px) translateZ(100px) rotateY(-45deg); 
+    text-align: right; 
+}
+
+
+.service-card3 {
+    background-color: #colors[buttonColorg]; 
+    border: 2px solid #colors[buttonColorg];
+    transform: perspective(1200px) translateZ(100px) rotateY(45deg); 
+}
+
+.service-card4 {
+    background-color: #colors[buttonColory]; 
+    border: 2px solid #colors[buttonColory];
+    transform: perspective(1200px) translateZ(100px) rotateY(-45deg); 
+    text-align: right; 
 }

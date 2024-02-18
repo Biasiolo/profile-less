@@ -205,10 +205,14 @@ header .profile-avatar:hover {
   opacity: 1;
 }
 footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 20px;
   color: #ffdd59;
   text-align: center;
-  margin-top: 2rem;
+  max-width: 200px;
+  margin: 0 auto;
 }
 .modal {
   display: none;
@@ -264,4 +268,57 @@ footer {
     top: 2vh;
     right: 45%;
   }
+}
+.services-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+.service-section-card {
+  display: flex;
+  margin: 0 auto;
+}
+.service-card1,
+.service-card2,
+.service-card3,
+.service-card4 {
+  width: 200px;
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 1.3rem;
+  color: #1e272e;
+  border: 2px solid #575fcf;
+  background-color: #575fcf;
+  transform: perspective(1200px) translateZ(100px) rotateY(45deg);
+  text-align: left;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.service-card1:hover,
+.service-card2:hover,
+.service-card3:hover,
+.service-card4:hover {
+  transform: scale(1.05);
+  text-align: center;
+  background-color: transparent;
+  color: #d2dae2;
+}
+.service-card2 {
+  background-color: #ff5e57;
+  border: 2px solid #ff5e57;
+  transform: perspective(1200px) translateZ(100px) rotateY(-45deg);
+  text-align: right;
+}
+.service-card3 {
+  background-color: #05c46b;
+  border: 2px solid #05c46b;
+  transform: perspective(1200px) translateZ(100px) rotateY(45deg);
+}
+.service-card4 {
+  background-color: #ffdd59;
+  border: 2px solid #ffdd59;
+  transform: perspective(1200px) translateZ(100px) rotateY(-45deg);
+  text-align: right;
 }
