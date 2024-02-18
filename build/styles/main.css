@@ -179,6 +179,11 @@ header .profile-avatar:hover {
     top: 5vh;
     right: 5vw;
   }
+  .service-section-card {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
 }
 .language-icon {
   transition: transform 1s ease;
