@@ -181,6 +181,8 @@ header .profile-avatar:hover {
   font-family: "IBM Plex Sans", sans-serif;
   align-items: center;
   transition: box-shadow 0.3s ease;
+  color: #ffdd59;
+  font-weight: 600;
 }
 .projeto-section button:hover {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
