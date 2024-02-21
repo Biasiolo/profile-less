@@ -278,9 +278,6 @@ header {
     font-size: 0.9rem;
     max-width: 200px;
     margin: 0 auto;
-
-
-
   }
 
 
@@ -317,6 +314,96 @@ header {
     font-size: 3rem;
     
   }
+
+  .projeto-section {
+    margin: 2vh auto;
+    padding-top: 3rem;
+    font-family: "IBM Plex Sans", sans-serif;
+
+    button {
+        padding: 1rem;
+        font-size: 1.3rem;
+        cursor: pointer;
+        border: 2px solid #575fcf; 
+        background-color: #575fcf; 
+        font-family: "IBM Plex Sans", sans-serif;
+        align-items: center;
+
+        /* Adição do efeito de afundar ao clicar */
+        transition: box-shadow 0.3s ease;
+
+        &:hover {
+            /* Adição de uma leve sombra quando o botão é hover */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            background-color: transparent; 
+        }
+
+        &:active {
+            /* Efeito de afundar ao clicar */
+            box-shadow: inset 0 1px 3px #ffdd59;
+        }
+    }
+}
+  .section-title2 {
+    text-align: center;
+    color: #ffdd59;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    margin: 0 auto;
+  }
+
+
+
+  .modal1 {
+    display: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 555;
+    font-size: 18px;
+}
+
+.modal-content1 {
+    background: #575fcf;
+    padding: 20px;
+    max-width: 100%;
+    width: 600px;
+    margin: 2vh auto;
+    text-align: left;
+
+}
+
+/* Adição de estilos específicos para o card de Pokémon */
+
+.modal-content1 ul {
+    list-style: none;
+    padding: 20px;
+}
+
+.modal-content1 li {
+    margin-bottom: 0.8rem;
+}
+
+.modal-content1 li strong {
+    color:#1e272e;
+}
+
+.fecharModalBtn {
+    top: 2vh;
+    right: 35vw;
+    cursor: pointer;
+    color: red;
+    font-size: 3rem;
+    text-align: center;
+}
+
+
 
 @media screen and (max-width: 767px) {
     .close {
