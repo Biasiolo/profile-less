@@ -189,56 +189,154 @@ header {
     }
 }
 
+//modal projetos
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 555;
+
+  }
+  
+  .modal-content {
+    background: #05c46b;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 100%;
+    width: 600px;
+    margin: auto;
+  }
+  
+  .close {
+    top: 2vh;
+    right: 35vw;
+    cursor: pointer;
+    color: red;
+    font-size: 3rem;
+    
+  }
+
+//atributos
+.projeto-section {
+    margin: 2vh auto;
+    padding-top: 3rem;
+    font-family: "IBM Plex Sans", sans-serif;
+
+    button {
+        padding: 1rem;
+        font-size: 1.3rem;
+        cursor: pointer;
+        border: 2px solid #575fcf; 
+        background-color: #575fcf; 
+        font-family: "IBM Plex Sans", sans-serif;
+        align-items: center;
+        transition: box-shadow 0.3s ease;
+
+        &:hover {
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            background-color: transparent; 
+            color: #colors[textColor];
+
+        }
+
+        &:active {
+            /* Efeito de afundar ao clicar */
+            box-shadow: inset 0 1px 3px #ffdd59;
+        }
+    }
+}
+  .section-title2 {
+    text-align: center;
+    color: #ffdd59;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    margin: 0 auto;
+  }
+
+  .modal1 {
+    display: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 555;
+    font-size: 18px;
+  
+    &.visible {
+      display: flex;
+    }
+  }
+  
+  .modal-content1 {
+    background: #575fcf;
+    padding: 20px;
+    max-width: 100%;
+    width: 600px;
+    margin: 2vh auto;
+    text-align: left;
+  
+    ul {
+      list-style: none;
+      padding: 20px;
+  
+      li {
+        margin-bottom: 0.8rem;
+  
+        strong {
+          color: #1e272e;
+        }
+      }
+    }
+  }
+
+
+.fecharModalBtn {
+    top: 2vh;
+    right: 35vw;
+    cursor: pointer;
+    color: red;
+    font-size: 3rem;
+    text-align: center;
+}
+
 // Segunda seção
 .sectiontwo {
-    margin: 1rem auto;
+    margin: 2rem auto;
     padding: 2.3rem;
     align-items: center;
     text-align: center;
     max-width: 100%;
     justify-content: center;
-
 }
 
 .badget {
     display: flex; 
-    margin-bottom: 1rem;
+    margin: 2rem auto;
     flex-wrap: wrap; /* Permite que os ícones quebrem para a próxima linha em dispositivos móveis */
 }
 
 .icon-container {
     position: relative;
     display: inline-block; /* Alterado para inline-block para permitir a aplicação de margens */
-    margin-bottom: 1rem; /* Adiciona uma margem inferior entre os ícones */
-    padding: 0.5rem;
+    margin: 1rem auto;
+    padding: 0.6rem;
     cursor:grab;
     cursor:crosshair;
+    background: rgba(0, 0, 0, 0.2);
 }
 
-/* Media query para ajustar a exibição em dispositivos móveis */
-@media screen and (max-width: 767px) {
-    .icon-container {
-        width: calc(30% - 2rem); /* Dois ícones por linha em dispositivos móveis */
-        margin-bottom: 2.2rem; /* Adiciona uma margem inferior entre os ícones */
-    }
-
-    img {
-        max-width: 100%;
-    }
-
-    .close {
-        position: absolute;
-        top: 5vh;
-        right: 5vw;
-      }
-
-      .service-section-card {
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-    }
-}
-  
   .language-icon {
     transition: transform 1s ease;
   }
@@ -264,11 +362,79 @@ header {
   
   .language-icon:hover + .language-name {
     opacity: 1;
-
   }
 
-  footer {
+  //serviços
+.services-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+  }
+  
+  .service-section-card {
+    display: flex;
+    margin: 0 auto;
+  }
+  
+  .service-card1,
+  .service-card2,
+  .service-card3,
+  .service-card4 {
+    width: 200px;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 1.3rem;
+    color: #colors[textColor2];
+    border: 2px solid #colors[buttonColor];
+    background-color: #colors[buttonColor];
+    transform: perspective(1200px) translateZ(100px) rotateY(45deg);
+    text-align: left;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: w-resize;
+  
+    &:hover {
+      transform: scale(1.05);
+      text-align: center;
+      background-color: transparent;
+      color: #colors[textColor];
+    }
+  }
+  
+  .service-card2 {
+    background-color: #colors[buttonColort];
+    border: 2px solid #colors[buttonColort];
+    transform: perspective(1200px) translateZ(100px) rotateY(-45deg);
+    text-align: right;
+  }
+  
+  .service-card3 {
+    background-color: #colors[buttonColorg];
+    border: 2px solid #colors[buttonColorg];
+    transform: perspective(1200px) translateZ(100px) rotateY(45deg);
+  }
+  
+  .service-card4 {
+    background-color: #colors[buttonColory];
+    border: 2px solid #colors[buttonColory];
+    transform: perspective(1200px) translateZ(100px) rotateY(-45deg);
+    text-align: right;
+  }
+  
 
+.back-to-top {
+    text-decoration: none;
+    color:@corTexto;
+    margin-bottom: 2rem;
+    &:hover {
+        transform: scale(1.2);
+        color:#ffdd59;
+    }
+}
+
+footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -280,200 +446,25 @@ header {
     margin: 0 auto;
   }
 
-
-  .modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    z-index: 555;
-
-  }
-  
-  .modal-content {
-    background: #05c46b;
-    padding: 20px;
-    border-radius: 5px;
-    max-width: 100%;
-    width: 600px;
-    margin: auto;
-  }
-  
-  .close {
-
-    top: 2vh;
-    right: 35vw;
-    cursor: pointer;
-    color: red;
-    font-size: 3rem;
-    
-  }
-
-  .projeto-section {
-    margin: 2vh auto;
-    padding-top: 3rem;
-    font-family: "IBM Plex Sans", sans-serif;
-
-    button {
-        padding: 1rem;
-        font-size: 1.3rem;
-        cursor: pointer;
-        border: 2px solid #575fcf; 
-        background-color: #575fcf; 
-        font-family: "IBM Plex Sans", sans-serif;
-        align-items: center;
-
-        /* Adição do efeito de afundar ao clicar */
-        transition: box-shadow 0.3s ease;
-
-        &:hover {
-            /* Adição de uma leve sombra quando o botão é hover */
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-            background-color: transparent; 
-        }
-
-        &:active {
-            /* Efeito de afundar ao clicar */
-            box-shadow: inset 0 1px 3px #ffdd59;
-        }
-    }
-}
-  .section-title2 {
-    text-align: center;
-    color: #ffdd59;
-    font-size: 1.3rem;
-    margin-bottom: 1.5rem;
-    margin: 0 auto;
-  }
-
-
-
-  .modal1 {
-    display: none;
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.2);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    z-index: 555;
-    font-size: 18px;
-}
-
-.modal-content1 {
-    background: #575fcf;
-    padding: 20px;
-    max-width: 100%;
-    width: 600px;
-    margin: 2vh auto;
-    text-align: left;
-
-}
-
-/* Adição de estilos específicos para o card de Pokémon */
-
-.modal-content1 ul {
-    list-style: none;
-    padding: 20px;
-}
-
-.modal-content1 li {
-    margin-bottom: 0.8rem;
-}
-
-.modal-content1 li strong {
-    color:#1e272e;
-}
-
-.fecharModalBtn {
-    top: 2vh;
-    right: 35vw;
-    cursor: pointer;
-    color: red;
-    font-size: 3rem;
-    text-align: center;
-}
-
-
-
+/* Media query para ajustar a exibição em dispositivos móveis */
 @media screen and (max-width: 767px) {
-    .close {
+    .icon-container {
+        width: calc(30% - 2rem); /* Dois ícones por linha em dispositivos móveis */
+        margin-bottom: 2.2rem; /* Adiciona uma margem inferior entre os ícones */
+    }
 
+    img {
+        max-width: 100%;
+    }
+
+    .close {
         top: 2vh;
         right: 45%;
       }
-}
 
-.services-section {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 1rem;
-    margin-bottom: 4rem;
-}
-
-.service-section-card {
-    display: flex;
-    margin: 0 auto;
-}
-
-.service-card1, .service-card2, .service-card3, .service-card4 {
-    width: 200px;
-    padding: 1rem;
-    margin: 1rem;
-    font-size: 1.3rem;
-    color: #colors[textColor2];
-    border: 2px solid #colors[buttonColor]; 
-    background-color: #colors[buttonColor]; 
-    transform: perspective(1200px) translateZ(100px) rotateY(45deg); 
-    text-align: left;
-    transition: transform 0.3s ease, background-color 0.3s ease; 
-    cursor:w-resize;
-    &:hover {
-        transform: scale(1.05);
-        text-align: center;
-        background-color: transparent;
-        color: #colors[textColor];
-    }
-}
-
-.service-card2 {
-    background-color: #colors[buttonColort]; 
-    border: 2px solid #colors[buttonColort];
-    transform: perspective(1200px) translateZ(100px) rotateY(-45deg); 
-    text-align: right; 
-}
-
-
-.service-card3 {
-    background-color: #colors[buttonColorg]; 
-    border: 2px solid #colors[buttonColorg];
-    transform: perspective(1200px) translateZ(100px) rotateY(45deg); 
-}
-
-.service-card4 {
-    background-color: #colors[buttonColory]; 
-    border: 2px solid #colors[buttonColory];
-    transform: perspective(1200px) translateZ(100px) rotateY(-45deg); 
-    text-align: right; 
-}
-
-.back-to-top {
-    text-decoration: none;
-    color:@corTexto;
-    margin-bottom: 2rem;
-    &:hover {
-        transform: scale(1.2);
-        color:#ffdd59;
+      .service-section-card {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
     }
 }

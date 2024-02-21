@@ -139,87 +139,6 @@ header .profile-avatar:hover {
   transform: perspective(1200px) translateZ(100px) rotateY(-45deg);
   text-align: right;
 }
-.sectiontwo {
-  margin: 1rem auto;
-  padding: 2.3rem;
-  align-items: center;
-  text-align: center;
-  max-width: 100%;
-  justify-content: center;
-}
-.badget {
-  display: flex;
-  margin-bottom: 1rem;
-  flex-wrap: wrap;
-  /* Permite que os ícones quebrem para a próxima linha em dispositivos móveis */
-}
-.icon-container {
-  position: relative;
-  display: inline-block;
-  /* Alterado para inline-block para permitir a aplicação de margens */
-  margin-bottom: 1rem;
-  /* Adiciona uma margem inferior entre os ícones */
-  padding: 0.5rem;
-  cursor: grab;
-  cursor: crosshair;
-}
-/* Media query para ajustar a exibição em dispositivos móveis */
-@media screen and (max-width: 767px) {
-  .icon-container {
-    width: calc(30% - 2rem);
-    /* Dois ícones por linha em dispositivos móveis */
-    margin-bottom: 2.2rem;
-    /* Adiciona uma margem inferior entre os ícones */
-  }
-  img {
-    max-width: 100%;
-  }
-  .close {
-    position: absolute;
-    top: 5vh;
-    right: 5vw;
-  }
-  .service-section-card {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-  }
-}
-.language-icon {
-  transition: transform 1s ease;
-}
-.language-icon:hover {
-  transform: rotatey(360deg);
-}
-.language-name {
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #ffdd59;
-  color: #1e272e;
-  padding: 5px;
-  border-radius: 8px;
-  opacity: 0;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  /* Adiciona transição para a rotação */
-  margin-top: 6px;
-  font-size: 1.1rem;
-}
-.language-icon:hover + .language-name {
-  opacity: 1;
-}
-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 20px;
-  color: #ffdd59;
-  text-align: center;
-  font-size: 0.9rem;
-  max-width: 200px;
-  margin: 0 auto;
-}
 .modal {
   display: none;
   position: fixed;
@@ -261,13 +180,12 @@ footer {
   background-color: #575fcf;
   font-family: "IBM Plex Sans", sans-serif;
   align-items: center;
-  /* Adição do efeito de afundar ao clicar */
   transition: box-shadow 0.3s ease;
 }
 .projeto-section button:hover {
-  /* Adição de uma leve sombra quando o botão é hover */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   background-color: transparent;
+  color: #d2dae2;
 }
 .projeto-section button:active {
   /* Efeito de afundar ao clicar */
@@ -294,6 +212,9 @@ footer {
   z-index: 555;
   font-size: 18px;
 }
+.modal1.visible {
+  display: flex;
+}
 .modal-content1 {
   background: #575fcf;
   padding: 20px;
@@ -302,15 +223,14 @@ footer {
   margin: 2vh auto;
   text-align: left;
 }
-/* Adição de estilos específicos para o card de Pokémon */
 .modal-content1 ul {
   list-style: none;
   padding: 20px;
 }
-.modal-content1 li {
+.modal-content1 ul li {
   margin-bottom: 0.8rem;
 }
-.modal-content1 li strong {
+.modal-content1 ul li strong {
   color: #1e272e;
 }
 .fecharModalBtn {
@@ -321,11 +241,53 @@ footer {
   font-size: 3rem;
   text-align: center;
 }
-@media screen and (max-width: 767px) {
-  .close {
-    top: 2vh;
-    right: 45%;
-  }
+.sectiontwo {
+  margin: 2rem auto;
+  padding: 2.3rem;
+  align-items: center;
+  text-align: center;
+  max-width: 100%;
+  justify-content: center;
+}
+.badget {
+  display: flex;
+  margin: 2rem auto;
+  flex-wrap: wrap;
+  /* Permite que os ícones quebrem para a próxima linha em dispositivos móveis */
+}
+.icon-container {
+  position: relative;
+  display: inline-block;
+  /* Alterado para inline-block para permitir a aplicação de margens */
+  margin: 1rem auto;
+  padding: 0.6rem;
+  cursor: grab;
+  cursor: crosshair;
+  background: rgba(0, 0, 0, 0.2);
+}
+.language-icon {
+  transition: transform 1s ease;
+}
+.language-icon:hover {
+  transform: rotatey(360deg);
+}
+.language-name {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffdd59;
+  color: #1e272e;
+  padding: 5px;
+  border-radius: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  /* Adiciona transição para a rotação */
+  margin-top: 6px;
+  font-size: 1.1rem;
+}
+.language-icon:hover + .language-name {
+  opacity: 1;
 }
 .services-section {
   display: flex;
@@ -389,4 +351,36 @@ footer {
 .back-to-top:hover {
   transform: scale(1.2);
   color: #ffdd59;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  color: #ffdd59;
+  text-align: center;
+  font-size: 0.9rem;
+  max-width: 200px;
+  margin: 0 auto;
+}
+/* Media query para ajustar a exibição em dispositivos móveis */
+@media screen and (max-width: 767px) {
+  .icon-container {
+    width: calc(30% - 2rem);
+    /* Dois ícones por linha em dispositivos móveis */
+    margin-bottom: 2.2rem;
+    /* Adiciona uma margem inferior entre os ícones */
+  }
+  img {
+    max-width: 100%;
+  }
+  .close {
+    top: 2vh;
+    right: 45%;
+  }
+  .service-section-card {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
 }
