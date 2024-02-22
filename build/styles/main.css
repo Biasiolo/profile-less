@@ -103,7 +103,7 @@ header .profile-avatar:hover {
   margin-bottom: 1rem;
   font-weight: 700;
   font-size: 1.2rem;
-  color: #1e272e;
+  color: #17171a;
   transition: transform 0.4s ease;
 }
 .projects-list-item a:hover,
@@ -311,7 +311,7 @@ header .profile-avatar:hover {
   padding: 1rem;
   margin: 1rem;
   font-size: 1.3rem;
-  color: #1e272e;
+  color: #17171a;
   border: 2px solid #575fcf;
   background-color: #575fcf;
   transform: perspective(1200px) translateZ(100px) rotateY(45deg);
