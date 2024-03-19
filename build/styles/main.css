@@ -386,4 +386,7 @@ footer {
     flex-direction: column;
     margin: 0 auto;
   }
+  .modal-content {
+    width: 100vw;
+  }
 }
