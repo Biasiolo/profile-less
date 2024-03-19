@@ -153,11 +153,11 @@ header .profile-avatar:hover {
   z-index: 555;
 }
 .modal-content {
-  background: #05c46b;
+  background: #747474;
   padding: 20px;
   border-radius: 5px;
   max-width: 100%;
-  width: 600px;
+  width: 80vw;
   margin: auto;
 }
 .close {
@@ -213,6 +213,7 @@ header .profile-avatar:hover {
   text-align: center;
   z-index: 555;
   font-size: 18px;
+  padding-bottom: 20px;
 }
 .modal1.visible {
   display: flex;
